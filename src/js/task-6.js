@@ -4,7 +4,7 @@
 // Операція введення числа користувачем і збереження в масив триває до тих пор, пір, поки користувач не натисне Cancel в prompt.
 // Після того як користувач припинив введення натиснувши Cancel, якщо масив не порожній, необхідно порахувати суму всіх елементів масиву і записати її в змінну total. Використовуй цикл for або for...of. Після чого в консоль виведи рядок 'Загальна сума чисел дорівнює [сума]'.
 
-// 1
+// // 1
 let input;
 const numbers = [];
 
@@ -21,5 +21,20 @@ while (true) {
     break;
   }
 }
+// console.log(total);
 
-console.log(total);
+// const validNumber = function (numbers) {
+//   const isValidNumberValid = numbers.isNaN(input);
+
+//   while (isValidNumberValid === false) {
+//     input = prompt("введіть число");
+//     numbers.push(Number(input));
+//     if (input === null) {
+//       //3
+//       for (const add of numbers) {
+//         total += add;
+//       }
+//       return total;
+//     }
+//   }
+// };
