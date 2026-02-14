@@ -6,13 +6,10 @@ const checkForSpam = function (message) {
   let secondeSpamWord = "spam";
   const firstIncludeSpam = lowerMessage.includes(firstSpamWord);
   const secondeIncludeSpam = lowerMessage.includes(secondeSpamWord);
-  if (firstIncludeSpam == true) {
-    return "true";
-  } else if (secondeIncludeSpam == true) {
-    return "true";
-  } else {
-    return "false";
-  }
+  return (
+    lowerMessage.includes(firstSpamWord) ||
+    lowerMessage.includes(secondeSpamWord)
+  );
 };
 
 /*
